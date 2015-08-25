@@ -1,0 +1,46 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{MovieController.movie.title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a>
+                            <img class="media-object thumbnail image-modal-height" ng-src="{{MovieController.movie.thumb[0].preview}}" alt="imagen">
+                        </a>
+                    </div>
+
+                    <div class="media-body">
+                        <h5 class="media-heading text-color"><strong>"{{MovieController.movie.originaltitle}}" <em>(título original)</em></strong></h5>
+                        <h5 class="media-heading text-color"><strong>Año: </strong>{{MovieController.movie.year}}</h5>
+                        <h5 class="media-heading text-color"><strong>Géneros: </strong>{{MovieController.movie.genre}}</h5>
+                        <h5 class="media-heading text-color"><strong>Argumento:</strong></h5>
+                        <p>{{MovieController.movie.plot}}</p>
+                        <h5 class="media-heading text-color"><strong>Reparto:</strong></h5>
+                        <div class="panel panel-default">
+                            <ul class="list-group panel-heigth">
+                                 <li class="list-group-item" ng-repeat="actor in MovieController.movie.actor">
+                                    <div class="media">
+                                        <!--<div class="media-left media-middle" ng-show="actor.thumb.length">-->
+                                            <!--<img class="media-object image-actor" ng-src="{{actor.thumb}}" data-holder-rendered="true">-->
+                                        <!--</div>-->
+                                        <div class="media-body">
+                                            <p>{{actor.name}} como {{actor.role}}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

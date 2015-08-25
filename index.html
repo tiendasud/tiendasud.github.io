@@ -1,7 +1,169 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+﻿<!DOCTYPE html>
+<html lang="es" ng-app="Store">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="assets/img/images/favicon.ico">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <title>Tienda SUD</title>
+
+  <!--Libraries-->
+  <script src="libs/bower_components/angular/angular.min.js"></script>
+  <link rel="stylesheet" href=" libs/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="libs/bower_components/normalize.css/normalize.css"/>-->
+  <link rel="stylesheet" href="libs/bower_components/ihover/src/ihover.min.css"/>
+
+  <!-- App -->
+  <link href="app/movie-carousel.css" rel="stylesheet">
+  <script src="app/app.module.js"></script>
+
+  <!--Angular modules-->
+  <!--Movie-->
+  <script src="app/modules/movie/movie.controller.js"></script>
+  <!--Movie card-->
+  <link rel="stylesheet" href="app/modules/movie/movie-card/movie-card.css"/>
+  <script src="app/modules/movie/movie-card/movie-card.directive.js"></script>
+  <!--Movie modal-->
+  <link href="app/modules/movie/movie-modal/movie-modal.css" rel="stylesheet">
+  <script src="app/modules/movie/movie-modal/movie-modal.directive.js"></script>
+  <!--Navbar-->
+  <script src="app/modules/navbar/navbar.directive.js"></script>
+  <!--Home-->
+  <link rel="stylesheet" href="app/modules/home/home.css"/>
+
+
+</head>
+<body ng-controller="MovieController as MovieController" id="top">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div ng-show="isSet(1) || isSet(3)">
+    <!-- Carousel
+    ================================================== -->
+    <div id="carouselHome" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselHome" data-slide-to="1" class=""></li>
+        <li data-target="#carouselHome" data-slide-to="2" class=""></li>
+      </ol>
+
+      <!-- Images -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active image-container image-header1">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Películas SUD.</h1>
+              <p>Una gran colección de películas en varios géneros con temática Santos de los Últimos Días (SUD) y películas inspiradoras.</p>
+              <p><a class="btn btn-lg btn-primary" href ng-click="setTab(2)" role="button">Ver catálogo</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item image-container image-header2">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tienda SUD.</h1>
+              <p>Productos pensados para una gran comunidad de miembros Santos de los Últimos Días (SUD). Muy pronto nuevos productos…</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item image-container image-header3">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Tienda SUD.</h1>
+              <p>Productos pensados para una gran comunidad de miembros Santos de los Últimos Días (SUD). Muy pronto nuevos productos…</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carouselHome" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carouselHome" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+  </div>
+
+  <div ng-show="isSet(2)">
+    <!-- Carousel
+    ================================================== -->
+    <div id="carouselMovie" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselMovie" data-slide-to="{{outerIndex}}"
+            ng-class="outerIndex==0 ? 'active' : ''"
+            ng-repeat="movie in MovieController.movies | orderBy:MovieController.tipoOrden" ng-init="outerIndex=$index;">
+        </li>
+      </ol>
+
+      <!-- Images -->
+      <div class="carousel-inner" role="listbox">
+        <div ng-class="first ? 'item active image-container' : 'item image-container'"
+             ng-repeat="movie in MovieController.movies | orderBy:MovieController.tipoOrden"
+             ng-init="first=$first;"
+             ng-style="movie.fanart.thumb[0].preview ? {'background-image':'url({{movie.fanart.thumb[0].preview}})'} : {'background-image':'url({{movie.thumb[0].preview}})'}">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{movie.title}}</h1>
+              <p>{{movie.tagline}}</p>
+              <p><a class="btn btn-lg btn-primary" href="#" ng-click="MovieController.setMovie(movie)" role="button" data-toggle="modal" data-target="#myModal">Detalles</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carouselMovie" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carouselMovie" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+  </div>
+
+  <!-- Nav Bar  -->
+  <nav-bar></nav-bar>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="libs/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!--<script src="libs/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 </body>
 </html>

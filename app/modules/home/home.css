@@ -1,0 +1,17 @@
+.image-container {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.image-header1 {
+    background-image: url("../../../assets/img/images/banner01.jpg");
+}
+
+.image-header2 {
+    background-image: url("../../../assets/img/images/banner02.jpg");
+}
+
+.image-header3 {
+    background-image: url("../../../assets/img/images/banner03.jpg");
+}

@@ -1,0 +1,13 @@
+.image-modal-height{
+    height: 300px;
+}
+
+.image-actor{
+    border-radius: 10%;
+    height: 50px !important;
+}
+
+.panel-heigth{
+    height: 70px !important;
+    overflow-y: scroll!important;
+}

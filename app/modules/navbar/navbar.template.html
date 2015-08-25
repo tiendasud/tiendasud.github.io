@@ -1,0 +1,42 @@
+<!-- NAVBAR -->
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href ng-click="setTab(1)">Tienda SUD</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{ active:isSet(1) }"><a href ng-click="setTab(1)">Inicio</a></li>
+                        <li ng-class="{ active:isSet(2) }"><a href ng-click="setTab(2)">Películas SUD</a></li>
+                        <li ng-class="{ active:isSet(3) }"><a href ng-click="setTab(3)">Pedidos</a></li>
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#contact">Contact</a></li>-->
+                        <!--<li class="dropdown">-->
+                        <!--<a href="http://getbootstrap.com/examples/carousel/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#">Action</a></li>-->
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#">Another action</a></li>-->
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li class="dropdown-header">Nav header</li>-->
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#">Separated link</a></li>-->
+                        <!--<li><a href="http://getbootstrap.com/examples/carousel/#">One more separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div><!-- NAVBAR END -->
+
+<div ng-show="isSet(1)" ng-include="'app/modules/home/home.template.html'"></div>
+<div ng-show="isSet(2)" ng-include="'app/modules/movie/movie.template.html'"></div>
+<div ng-show="isSet(3)" ng-include="'app/modules/home/home-buy/home-buy.template.html'"></div>

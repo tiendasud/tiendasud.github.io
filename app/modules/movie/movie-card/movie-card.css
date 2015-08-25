@@ -1,0 +1,14 @@
+.image-height{
+    /*height: auto !important;*/
+    height: 460px !important;
+}
+
+.overflow{
+    overflow: auto !important;
+}
+
+.image-actor-card{
+    border-radius: 10%;
+    height: 70px !important;
+    width: auto !important;
+}
