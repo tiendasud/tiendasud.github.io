@@ -12,3 +12,43 @@
     height: 70px !important;
     width: auto !important;
 }
+
+.text-image {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.text-image span {
+    color: #ffffff;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+}
+
+.text-image {
+    position: absolute;
+    top: 350px;
+
+}
+
+.text-image span {
+    color: #ffffff;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+}
+
+.text-title {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    color: #ffffff;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.70);
+    padding: 10px;
+}

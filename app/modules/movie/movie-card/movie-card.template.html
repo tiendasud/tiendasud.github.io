@@ -17,7 +17,15 @@
     <div class="col-sm-6 col-md-4" ng-repeat="movie in movieFiltered = (MovieController.movies | filter:{title:buscador} | orderBy:MovieController.tipoOrden)">
         <div class="ih-item square effect6 from_top_and_bottom image-height">
             <a>
-                <div class="img"><img ng-src="{{movie.thumb[0].preview}}" alt="img"></div>
+                <div class="img">
+                    <img ng-src="{{movie.thumb[0].preview}}" alt="img">
+                    <div class="text-image">
+                        <h2><span>{{movie.price | currency : "Bs. "}}</span></h2>
+                    </div>
+                    <div class="text-title text-center">
+                        <h4>{{movie.title}}</h4>
+                    </div>
+                </div>
                 <div class="info overflow">
                     <h3>{{movie.title}}</h3>
                     <p>

@@ -95,7 +95,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/3RJbPxAtozBphM6yRCt53RJ65Dj.jpg",
           "poster": "http://image.tmdb.org/t/p/original/gc9FyFlf8NwLvUMNl6T0ynIlYFd.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Bautistas en Nuestra Parrillada",
@@ -123,7 +124,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/8vogqLuo0HU3RXptVnSbyX0yVXS.jpg",
           "poster": "http://image.tmdb.org/t/p/original/mduujGwUuwmxCq26UyajykjtEZk.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La Bella y la Bestia",
@@ -167,7 +169,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/sJsoprJKhTdW90t4f860e8533VT.jpg",
           "poster": "http://image.tmdb.org/t/p/original/3L1qjJnP3BgnawetA8rWgdLVUjl.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Ciudad de Brigham",
@@ -211,7 +214,8 @@
         "art": {
           "fanart": null,
           "poster": "http://image.tmdb.org/t/p/original/hWhC67YKgLrKYWFC99sP6pRZNt7.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Brigham Young",
@@ -334,7 +338,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/uPeA4m8P8SeY3dJIv614lh3ndNL.jpg",
           "poster": "http://image.tmdb.org/t/p/original/n8ffcQw1fM66rejsxHLs5TMrMOn.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Charly",
@@ -419,7 +424,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/ik4oGgT0IkdNLpbUYuDaRBOag35.jpg",
           "poster": "http://image.tmdb.org/t/p/original/wEEn0CyJFRJZMv6flaLJCB3OUJM.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Ángel de Navidad",
@@ -464,7 +470,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/tNDzPueq5A5G5bSsG3cmf666Luz.jpg",
           "poster": "http://image.tmdb.org/t/p/original/km73XbAWw545HlvTxwoVa39GJtf.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Church Ball",
@@ -537,7 +544,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/7t5RxQtbxU3c2DZrqbJKQQ3xYxi.jpg",
           "poster": "http://image.tmdb.org/t/p/original/6jfhFzFsEi7g9dfYSr8GxMIKOgQ.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Por Siempre Fuerte",
@@ -690,7 +698,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/tcl2Vobs4ZZSliO6fkMfOyrxgXO.jpg",
           "poster": "http://image.tmdb.org/t/p/original/6UMwStGL0qHXe3xurnZkzc1k76i.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Ejército de Dios",
@@ -720,7 +729,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/jhu8Rgr9dkluMnrhx0gyLJjcos6.jpg",
           "poster": "http://image.tmdb.org/t/p/original/n1LMJueb73Od7XzgjFkCQFfrmpZ.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "José: Rey de los sueños",
@@ -883,7 +893,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/rMTLHCjB0T7zxME4CjwaqNWlIbw.jpg",
           "poster": "http://image.tmdb.org/t/p/original/reWZYbv4EsvhFB6BDsj8Vje0Ujd.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "José Smith: Planchas de Oro",
@@ -938,7 +949,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/1MQ477V8NbYYAMsHqmhDj6Clcr7.jpg",
           "poster": "http://image.tmdb.org/t/p/original/dt8WSRFJTtIj4JgHT2B0Up4MOVc.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Mafiosos y Mormones",
@@ -993,7 +1005,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/fW8tI1RDc7bve4mQVcM31ECufHr.jpg",
           "poster": "http://image.tmdb.org/t/p/original/6w4lxkH9UOabYbo51mSCNVDH7F0.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Érase un verano",
@@ -1020,7 +1033,8 @@
         "art": {
           "fanart": null,
           "poster": "http://image.tmdb.org/t/p/original/AsuIagneYmeAzm8oSllWSwQlJlL.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Un buen hombre",
@@ -1141,7 +1155,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/1H0rbE7YmsWhO4mskvlgczPXEgz.jpg",
           "poster": "http://image.tmdb.org/t/p/original/hbO41HVkvp5MnFzFKhOu1fAVeEc.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Un tesoro del hombre",
@@ -1218,7 +1233,8 @@
         "art": {
           "fanart": null,
           "poster": "http://image.tmdb.org/t/p/original/9BJ3pefEgsnswPPlDDaL0vmem3V.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Una Noche con el Rey",
@@ -1393,7 +1409,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/1NycCF5H88nUNlH2qP3ayFXDnsy.jpg",
           "poster": "http://image.tmdb.org/t/p/original/tYCH2F4vGNEGSylOhnpbvrH0aXE.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Desesperadamente comprometido",
@@ -1502,7 +1519,8 @@
         "art": {
           "fanart": null,
           "poster": "http://image.tmdb.org/t/p/original/62qB0aWAgI1OqCTfqjPBRpI6S94.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Rescatados",
@@ -1549,7 +1567,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/zJqdfNbyTGBJhu4nfzKyx6TqFim.jpg",
           "poster": "http://image.tmdb.org/t/p/original/whLbV7PdqqCaGeJ9KCHMOWMoS2G.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Regresar con honor",
@@ -1624,7 +1643,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/iojledLqOFsacyxljjR6BB2Svc5.jpg",
           "poster": "http://image.tmdb.org/t/p/original/nPcQvXd9ZMzPjmxsasokhKjKqxI.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Hijos de Provo",
@@ -1674,7 +1694,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/7l1tK2pGnuWugTR4Af8SNVgh6ih.jpg",
           "poster": "http://image.tmdb.org/t/p/original/iaPRSijv56XnP71n0RaPTyefe8h.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Estados de Gracia",
@@ -1702,7 +1723,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/mLMWLYf0QtTjvO3kY8E3oognwwJ.jpg",
           "poster": "http://image.tmdb.org/t/p/original/cKfXxBwBTrQ61mQepsiHFDnN7mT.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Trajes sueltos",
@@ -1877,7 +1899,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/f2CC7qDxPn7RHAr5R8QapZ9bO25.jpg",
           "poster": "http://image.tmdb.org/t/p/original/h5gJw5GS2IElvJUHYlnbZ4lobvA.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Los Dos Mejores Años",
@@ -1963,7 +1986,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/a23O1Fp6c5XbJN4f9hgvmCHVCPS.jpg",
           "poster": "http://image.tmdb.org/t/p/original/dzUN3GD54MEyoWM6aYN6wtnqCxb.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Película El Libro de Mormón Volumen 1: El viaje",
@@ -1996,7 +2020,8 @@
         "art": {
           "fanart": null,
           "poster": "http://image.tmdb.org/t/p/original/rJnEmqJDMu4aYfALVCcPrjqIDaK.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La Misión de Ángeles.",
@@ -2050,7 +2075,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/fmc7gYYiVEkMTFvQMMwQWrsg7Rf.jpg",
           "poster": "http://image.tmdb.org/t/p/original/rw79XCQUDPX7TMRn1YRDz3sAJKu.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Los maestros orientadores",
@@ -2111,7 +2137,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/gtWbNzGojkUOSHfT56NrOMjxnD4.jpg",
           "poster": "http://image.tmdb.org/t/p/original/lh3qT9C4V8Eor81viV3HcWcNB3H.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La leyenda de Johnny Lingo",
@@ -2163,7 +2190,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/ouXYJmZfjPH82CLRu6yFRx33azB.jpg",
           "poster": "http://image.tmdb.org/t/p/original/b39D2EZD5nCU2EacnE6DZAuyGNv.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "El escritor de cartas",
@@ -2211,7 +2239,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/1LD9DUrR5tO0JMT37DBFmcZS6hU.jpg",
           "poster": "http://image.tmdb.org/t/p/original/l1ELTqCokKBAmZoC9bd4Xi1Z8G7.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Al otro lado del cielo",
@@ -2284,7 +2313,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/bb9F5OADiO53kT9C5HhX2cro3bj.jpg",
           "poster": "http://image.tmdb.org/t/p/original/udLEgcJt3a6Y6rvgLKh8YdL3hu9.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "El enfoque de Saratov",
@@ -2401,7 +2431,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/mudx2Q9o7q0qF8eMrMgI3X07HFv.jpg",
           "poster": "http://image.tmdb.org/t/p/original/kM1q0f5JwE9ZPLeiLiqt1PDyqsJ.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Barrio de solteros 2",
@@ -2439,7 +2470,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/rImKFiZYlqi5hbwxU7DbLhAJUIa.jpg",
           "poster": "http://image.tmdb.org/t/p/original/3AAHaClSGnRz9nKDizDtsiT4UN6.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "Barrio de solteros",
@@ -2492,7 +2524,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/sJtG4IYeQv31IYRZ1UvYYPS91pu.jpg",
           "poster": "http://image.tmdb.org/t/p/original/cJO8OI7foxDJe97uAuWwdxJid2y.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "El ultimo regalo",
@@ -2658,7 +2691,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/zJ4L8mrjpjxP64UCV7YJ7PHFXfx.jpg",
           "poster": "http://image.tmdb.org/t/p/original/nxiAVPIzO5RtFQnrHLfC5yk0I4a.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La obra y la gloria",
@@ -2742,7 +2776,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/g35FeGnUM7pgDdAFSXrt8aammHK.jpg",
           "poster": "http://image.tmdb.org/t/p/original/6g8njtBBFraBncvsWhgdTVvylq3.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La obra y la gloria II: Sion Americana",
@@ -2831,7 +2866,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/txGAAfWVjSVIhJxFaSBzAuhUEQc.jpg",
           "poster": "http://image.tmdb.org/t/p/original/qAMHUaWig4MoJ6VE90Y14eyE9NG.jpg"
-        }
+        },
+        "price": "10"
       },
       {
         "title": "La obra y la gloria III: Una casa dividida",
@@ -2926,7 +2962,8 @@
         "art": {
           "fanart": "http://image.tmdb.org/t/p/original/ut7mMdgOPi3FV2FAw3BU7JoCZz.jpg",
           "poster": "http://image.tmdb.org/t/p/original/3r37ueu4nixuUy8WVPHe4VRm8Do.jpg"
-        }
+        },
+        "price": "10"
       }
     ]
   }
