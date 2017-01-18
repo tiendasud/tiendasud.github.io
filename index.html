@@ -109,12 +109,12 @@
 
 <div class="jumbotron text-center" ng-show="isSet(2)">
   <br><br>
-  <p>
-      <strong>Numero de películas:</strong> {{MovieController.storeData.count}}<br>
-      <strong>Tamaño:</strong> {{MovieController.storeData.sizeString}}<br>
-  </p>
-  <h2><strong>TOTAL:</strong> {{MovieController.storeData.price | currency : "Bs. "}}</h2>      
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Realizar pedido</a></p>
+  <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">
+    Carro de compras
+    <span class="badge">{{MovieController.storeData.count}}</span>
+    <span class="badge">{{MovieController.storeData.sizeString}}</span>
+    <span class="badge">{{MovieController.storeData.price | currency : "Bs. "}}</span>
+  </button>
 </div>
 
 

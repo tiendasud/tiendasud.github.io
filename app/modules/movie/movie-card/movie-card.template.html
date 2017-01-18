@@ -16,6 +16,8 @@
 <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="movie in movieFiltered = (MovieController.movies | filter:{title:buscador} | orderBy:MovieController.tipoOrden)">
         <div class="thumbnail">
+            <input type="checkbox" ng-model="confirmed" ng-change="MovieController.addRemoveMovie(movie, confirmed)" id="ng-change-example1" />
+            <label for="ng-change-example1">Agregar al carro de compras</label><br />
             <div class="ih-item square effect6 from_top_and_bottom image-height">
                 <a>
                     <div class="img">
@@ -41,10 +43,8 @@
             </div>
           <div class="caption">
             <p>
-                <a href="#" class="btn btn-primary" role="button">Detalles</a>
+                <a href="#" class="btn btn-primary" role="button" ng-click="MovieController.openWindow(movie.tmdbId)">Detalles</a>
             </p>
-              <input type="checkbox" ng-model="confirmed" ng-change="MovieController.addRemoveMovie(movie, confirmed)" id="ng-change-example1" />
-              <label for="ng-change-example2">Añadir a lista</label><br />
           </div>
         </div>
     </div>
