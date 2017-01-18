@@ -15,43 +15,37 @@
 <!-- Box with images -->
 <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="movie in movieFiltered = (MovieController.movies | filter:{title:buscador} | orderBy:MovieController.tipoOrden)">
-        <div class="ih-item square effect6 from_top_and_bottom image-height">
-            <a>
-                <div class="img">
-                    <img ng-src="{{movie.thumb[0].preview}}" alt="img">
-                    <div class="text-image">
-                        <h2><span>{{movie.price | currency : "Bs. "}}</span></h2>
+        <div class="thumbnail">
+            <div class="ih-item square effect6 from_top_and_bottom image-height">
+                <a>
+                    <div class="img">
+                        <img ng-src="http://image.tmdb.org/t/p/w300/{{movie.posterPath}}" alt="img">
+                        <div class="text-image">
+                            <h3><span>{{MovieController.price | currency : "Bs. "}}</span></h3>
+                        </div>
+                        <div class="text-title text-center">
+                            <h4>{{movie.title}}</h4>
+                        </div>
                     </div>
-                    <div class="text-title text-center">
-                        <h4>{{movie.title}}</h4>
+                    <div class="info overflow">
+                        <h3>{{movie.title}}</h3>
+                        <p>
+                            <strong>"{{movie.originalTitle}}" <em>(título original)</em></strong> <br>
+                            <strong>Año: </strong>{{movie.year}} <br>
+                            <strong>Géneros: </strong>{{movie.genres}} <br>
+                            <strong>Argumento:</strong> <br>
+                            {{movie.overview}}  <br> <br>
+                        </p>
                     </div>
-                </div>
-                <div class="info overflow">
-                    <h3>{{movie.title}}</h3>
-                    <p>
-                        <strong>"{{movie.originaltitle}}" <em>(título original)</em></strong> <br>
-                        <strong>Año: </strong>{{movie.year}} <br>
-                        <strong>Géneros: </strong>{{movie.genre}} <br>
-                        <strong>Argumento:</strong> <br>
-                        {{movie.plot}}  <br> <br>
-                        <!--<strong>Reparto:</strong>-->
-                        <!--<div class="panel panel-default">-->
-                            <!--<ul class="list-group panel-heigth">-->
-                                <!--<li class="list-group-item" ng-repeat="actor in movie.actor">-->
-                                    <!--<div class="media">-->
-                                        <!--<div class="media-left media-middle" ng-show="actor.thumb.length">-->
-                                            <!--<img class="media-object image-actor-card" ng-src="{{actor.thumb}}" data-holder-rendered="true">-->
-                                        <!--</div>-->
-                                        <!--<div class="media-body">-->
-                                            <!--<p>{{actor.name}} como {{actor.role}}</p>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                    </p>
-                </div>
-            </a>
+                </a>
+            </div>
+          <div class="caption">
+            <p>
+                <a href="#" class="btn btn-primary" role="button">Detalles</a>
+            </p>
+              <input type="checkbox" ng-model="confirmed" ng-change="MovieController.addRemoveMovie(movie, confirmed)" id="ng-change-example1" />
+              <label for="ng-change-example2">Añadir a lista</label><br />
+          </div>
         </div>
     </div>
 </div><!-- /.row -->

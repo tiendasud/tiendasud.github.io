@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" ng-app="Store">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -106,45 +106,17 @@
     </div><!-- /.carousel -->
   </div>
 
-  <div ng-show="isSet(2)">
-    <!-- Carousel
-    ================================================== -->
-    <div id="carouselMovie" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselMovie" data-slide-to="{{outerIndex}}"
-            ng-class="outerIndex==0 ? 'active' : ''"
-            ng-repeat="movie in MovieController.movies | orderBy:MovieController.tipoOrden" ng-init="outerIndex=$index;">
-        </li>
-      </ol>
 
-      <!-- Images -->
-      <div class="carousel-inner" role="listbox">
-        <div ng-class="first ? 'item active image-container' : 'item image-container'"
-             ng-repeat="movie in MovieController.movies | orderBy:MovieController.tipoOrden"
-             ng-init="first=$first;"
-             ng-style="movie.fanart.thumb[0].preview ? {'background-image':'url({{movie.fanart.thumb[0].preview}})'} : {'background-image':'url({{movie.thumb[0].preview}})'}">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>{{movie.title}}</h1>
-              <p>{{movie.tagline}}</p>
-              <p><a class="btn btn-lg btn-primary" href="#" ng-click="MovieController.setMovie(movie)" role="button" data-toggle="modal" data-target="#myModal">Detalles</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="jumbotron text-center" ng-show="isSet(2)">
+  <br><br>
+  <p>
+      <strong>Numero de películas:</strong> {{MovieController.storeData.count}}<br>
+      <strong>Tamaño:</strong> {{MovieController.storeData.sizeString}}<br>
+  </p>
+  <h2><strong>TOTAL:</strong> {{MovieController.storeData.price | currency : "Bs. "}}</h2>      
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Realizar pedido</a></p>
+</div>
 
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carouselMovie" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carouselMovie" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-  </div>
 
   <!-- Nav Bar  -->
   <nav-bar></nav-bar>
