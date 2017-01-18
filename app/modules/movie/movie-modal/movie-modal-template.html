@@ -5,8 +5,8 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Carro de compras</h4>
-                <h4 class="modal-title text-right price-text-color" id="myModalLabel1">{{MovieController.storeData.sizeString}} </h4>
-                <h3 class="modal-title text-right price-text-color" id="myModalLabel2">{{MovieController.storeData.price | currency : "Bs. "}} </h3>
+                <h4 class="modal-title text-right price-text-color" id="myModalLabel1">{{MovieController.storeData.sizeString}} de {{MovieController.storeData.storage.capacity}} </h4>
+                <h3 class="modal-title text-right price-text-color" id="myModalLabel2">{{MovieController.storeData.totalPrice | currency : "Bs. "}} </h3>
             </div>
             <div class="modal-body">
                     <div class="table-responsive">
@@ -20,13 +20,20 @@
                                 <th>Precio Unitario</th>
                             </tr>
                             </thead>
-                            <tbody ng-repeat="movie in movieFiltered = (MovieController.movies | filter:{selected:true} | orderBy:MovieController.tipoOrden)">
+                            <tbody>
                             <tr>
+                                <td>0</td>
+                                <td></td>
+                                <td>{{MovieController.storeData.storage.name}}</td>
+                                <td>{{MovieController.storeData.storage.capacity}}</td>
+                                <td>{{MovieController.storeData.storage.price | currency : "Bs. "}}</td>
+                            </tr>
+                            <tr  ng-repeat="movie in movieFilteredModal = (MovieController.movies | filter:{selected:true} | orderBy:MovieController.tipoOrden)">
                                 <td>{{$index+1}}</td>
                                 <td><img ng-src="http://image.tmdb.org/t/p/w300/{{movie.posterPath}}" class="img-thumbnail" width="50"> </td>
                                 <td>{{movie.title}}</td>
                                 <td>{{movie.mediaInfo.sizeString}}</td>
-                                <td>{{MovieController.price  | currency : "Bs. "}}</td>
+                                <td>{{MovieController.moviesPrice | currency : "Bs. "}}</td>
                             </tr>
                             </tbody>
                         </table>

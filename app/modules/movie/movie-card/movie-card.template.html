@@ -16,14 +16,14 @@
 <div class="row">
     <div class="col-sm-6 col-md-4" ng-repeat="movie in movieFiltered = (MovieController.movies | filter:{title:buscador} | orderBy:MovieController.tipoOrden)">
         <div class="thumbnail">
-            <input type="checkbox" ng-model="confirmed" ng-change="MovieController.addRemoveMovie(movie, confirmed)" id="ng-change-example1" />
+            <input type="checkbox" ng-model="movie.selected" ng-change="MovieController.addRemoveMovie(movie)" id="ng-change-example1" />
             <label for="ng-change-example1">Agregar al carro de compras</label><br />
             <div class="ih-item square effect6 from_top_and_bottom image-height">
                 <a>
                     <div class="img">
                         <img ng-src="http://image.tmdb.org/t/p/w300/{{movie.posterPath}}" alt="img">
                         <div class="text-image">
-                            <h3><span>{{MovieController.price | currency : "Bs. "}}</span></h3>
+                            <h3><span>{{MovieController.moviesPrice | currency : "Bs. "}}</span></h3>
                         </div>
                         <div class="text-title text-center">
                             <h4>{{movie.title}}</h4>

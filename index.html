@@ -110,11 +110,26 @@
 
 <div class="jumbotron text-center" ng-show="isSet(2)">
   <br><br>
+  <div class="col-md-5"></div>
+  <form name="myForm" class="text-left col-md-7">
+    <label>
+      <input type="radio" ng-model="MovieController.typeStorage" ng-click="MovieController.updateTotalPrice()" value="usb32">32GB USB Pen Drive
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="MovieController.typeStorage" ng-click="MovieController.updateTotalPrice()" value="usb64">64GB USB Pen Drive
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="MovieController.typeStorage" ng-click="MovieController.updateTotalPrice()" value="micro32">32GB MicroSD
+    </label><br/>
+    <label>
+      <input type="radio" ng-model="MovieController.typeStorage" ng-click="MovieController.updateTotalPrice()" value="micro64">64GB MicroSD
+    </label><br/><br/>
+  </form>
   <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">
     Carro de compras
     <span class="badge">{{MovieController.storeData.count}}</span>
     <span class="badge">{{MovieController.storeData.sizeString}}</span>
-    <span class="badge">{{MovieController.storeData.price | currency : "Bs. "}}</span>
+    <span class="badge">{{MovieController.storeData.totalPrice | currency : "Bs. "}}</span>
   </button>
 </div>
 
