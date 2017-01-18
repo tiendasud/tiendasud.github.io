@@ -1,6 +1,6 @@
 (function () {
     'use strict';
 
-    angular.module('Store', []);
+    angular.module('Store', ['ngFileSaver']);
 })();
 

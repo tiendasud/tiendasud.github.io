@@ -4,10 +4,12 @@
         .module("Store")
         .controller('MovieController', [
             '$http',
+            'FileSaver',
+            'Blob',
             MovieController]
     )
 
-    function MovieController($http){
+    function MovieController($http, FileSaver, Blob){
         var vm = this;
         vm.movies = [];
         vm.storeData = {};
@@ -30,7 +32,8 @@
         }
 
         function generateFile(){
-            console.log('Generar fichero.');
+            var data = new Blob([angular.toJson(vm.storeData, false)], { type: 'text/plain;charset=utf-8' });
+            FileSaver.saveAs(data, 'pedido.txt');
         }
 
         function openWindow(id){
