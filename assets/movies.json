@@ -590,19 +590,19 @@
       "tmdbId": 40521,
       "year": 2007,
       "mediaInfo": {
-        "duration": 6197.3328,
+        "duration": 6197.358,
         "durationString": "1:43:17",
-        "size": 1905483595,
-        "sizeString": "1.8 GB",
+        "size": 2291694750,
+        "sizeString": "2.1 GB",
         "videoStream": {
           "resolution": "480p",
           "codecName": "H264"
         },
         "audios": [
-          " (AAC 5.1)"
+          "English (AAC 5.1)"
         ],
         "subtitles": [
-          " (dvd_subtitle)"
+          "English (mov_text)"
         ]
       },
       "selected": false

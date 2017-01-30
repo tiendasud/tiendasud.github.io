@@ -128,7 +128,7 @@
   <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">
     Carro de compras
     <span class="badge">{{MovieController.storeData.count}}</span>
-    <span class="badge">{{MovieController.storeData.sizeString}}</span>
+    <span class="badge">{{MovieController.storeData.sizeString}} de {{MovieController.storeData.storage.capacity}}</span>
     <span class="badge">{{MovieController.storeData.totalPrice | currency : "Bs. "}}</span>
   </button>
 </div>
