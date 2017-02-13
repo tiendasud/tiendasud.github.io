@@ -17,8 +17,8 @@
         vm.moviesPrice = 0;
         vm.typeStorage = 'usb32';
         vm.usb32 = {"price":100, "name":"32GB USB Pen Drive", "capacityReal":30000000000};
-        vm.usb64 = {"price":150, "name":"64GB USB Pen Drive", "capacityReal":60000000000};
-        vm.micro32 = {"price":110, "name":"32GB MicroSD", "capacityReal":30000000000};
+        vm.usb64 = {"price":200, "name":"64GB USB Pen Drive", "capacityReal":60000000000};
+        vm.micro32 = {"price":100, "name":"32GB MicroSD", "capacityReal":30000000000};
         vm.micro64 = {"price":200, "name":"64GB MicroSD", "capacityReal":60000000000};
 
         vm.addRemoveMovie = addRemoveMovie;
